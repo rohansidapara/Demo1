@@ -12,7 +12,7 @@ Revision :- OOPs concept
 
 Date: 05/08/2024
 
-completed :- Abstraction class with example, Interface with Example, Recursive call
-In progress :- loops, static class
+completed :- Abstraction class with example, Interface with Example, if, if-else, while, for loop with example
+In progress :- other loops, Assembly
 Revision :- OOPs concept 
 Extra :- learn basic git command (clone , init, add, commit, pull, push)
