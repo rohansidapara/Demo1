@@ -2,7 +2,7 @@
 
 namespace Polymorphism
 {
-    class cars
+    class Cars
     {
         public void Carsound()
         {
@@ -10,7 +10,7 @@ namespace Polymorphism
         }
     }
 
-    class BMW : cars
+    class BMW : Cars
     {
         public void Carsound()
         {
@@ -18,7 +18,7 @@ namespace Polymorphism
         }
     }
 
-    class Supra : cars
+    class Supra : Cars
     {
         public void Carsound()
         {

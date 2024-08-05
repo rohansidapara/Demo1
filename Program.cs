@@ -1,4 +1,6 @@
-﻿using Encapsulation;
+﻿using DemoLoops;
+using Encapsulation;
+using MyApplication;
 using Polymorphism;
 using System;
 
@@ -81,7 +83,7 @@ namespace Demo1
             Console.WriteLine();
 
 
-            cars car1 = new cars();
+            Cars car1 = new Cars();
             car1.Carsound();
 
             BMW Bmw_m5 = new BMW();
@@ -107,11 +109,35 @@ namespace Demo1
 
             Console.WriteLine(Sum.Add(2, 3));
             Console.WriteLine(Sum.Add(4.0, 5.0));
+            Console.WriteLine();
 
-            Console.WriteLine("write your name here : ");
-            string username = Console.ReadLine();
+            //Console.WriteLine("write your name here : ");
+            //string username = Console.ReadLine();
 
-            Console.WriteLine("Your name is " + username);
+            //Console.WriteLine("Your name is " + username);
+            Console.WriteLine("-- Abstraction Demo --");
+            Console.WriteLine();
+
+            Cat1 Mycat = new Cat1();
+            Mycat.sleep();
+            Mycat.aniamlSound();
+            Console.WriteLine();
+
+            Console.WriteLine("-- Interface Demo --");
+            Console.WriteLine();
+
+            RohanIN rohanin = new RohanIN();
+            rohanin.Print();
+            rohanin.Print2();
+
+            Console.WriteLine();
+            // Demos of Loops
+            Loops loops = new Loops();
+            loops.Loops1(2); // If loop
+            loops.Loops2(1); // While loop
+            loops.Loop1(1); // if else
+            loops.Loop1(0); // if else
+            //loops.Loop2(2); // do while
 
             Console.ReadLine();
         }
