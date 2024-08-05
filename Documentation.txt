@@ -1,0 +1,54 @@
+Inheritance :- is a fundamental concept in OOPs that allows us to define a new class based on an existing class. For .Net there are 4 type of
+               inheritance. 
+		1. single 
+		2. Multi-level 
+		3. Hierarchical 
+		4. Multiple.
+
+--> " : " symbol use for a Inherit class.
+--> " interface " keyword use for multiple inheritance.
+
+--> syantax:- child class : parent class
+ 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+Encapsulation :- is define as the wrapping of data and information under a single unit. Technically in encapsulation, the variable or data of
+		  a class are hidden from any other class and can be accessed only through any member function of its own class in which  they 
+		  are declered.
+--> Encapsulation achived by declaring all the variables in the class as "Private".
+--> It will not be visible to the user that how the class is stored values in the variables.He only knows that we are passing the values to 
+    accessors and variables are getting initialized to that value.
+--> we use Get - Set for intialized data and use data.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Abstraction :- Abstraction can be defined as the Process of identifying only the required characteristics of an object ingoing the irrelevent details 
+               
+--> Abstraction can achive by Abstract classes and Access modifiers
+--> Absraction class is decleaed with the help of " abstract " keyword.
+
+--> we can not create object bt using Abstract class
+--> In abstraction we create a two type of methods. one is normal and another is a abstract method.
+--> Abstract method can override by subclass.
+--> use a "abstract" key word befor method name and return type.
+--> use a "override" keyword to overrive abstract method in sub class.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Polymorphism :- Ploymorphism allows us to perform a single action in different ways. there are 2 types of polymorphism.
+		1. runtime polymorphism (overriding)
+		2. complie time polymorphism (overloading)
+-->  Whenever an object is bound with the functionality at run time, this is known as runtime polymorphism. Runtime polimorphism can be achived by method 
+     overriding. 
+--> Whenever an object is bound with the functionality at compile time, this is known as compile polymorphism.complie time polymorphism can be achived ny
+    method overloading.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Virtual Class :- Vritual class defined by writing a keyword "virtual" in the derived classes, allowing only one copy of data to be copied to class b and class c.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Interface :- interface is a completely "abstract class" which can only contain abstract methods and properties( with empty bodies)
+
+--> interface method not contain anything in body. subclass use that method as per they uses.

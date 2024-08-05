@@ -1,0 +1,18 @@
+Date: 01/08/2024
+
+Completed:- all type of inheritance with exapmle
+
+In Progress:- Encapsulation 
+
+Date: 02/08/2024
+
+Completed :- Encapsulation with example, Polymorphism (Overloading & Overriding ) with example , Abstraction
+In Progress :- virtual class and virtual method 
+Revision :- OOPs concept
+
+Date: 05/08/2024
+
+completed :- Abstraction class with example, Interface with Example, Recursive call
+In progress :- loops, static class
+Revision :- OOPs concept 
+Extra :- learn basic git command (clone , init, add, commit, pull, push)
