@@ -24,15 +24,15 @@ namespace Polymorphism
         {
             Console.WriteLine("The Supra sound like : ratttta ratttttaa..");
         }
-
     }
 
-    class area
+    // Run time polymorphism // method overriding
+    class Area
     {
-        public void area_cal() { }
+        public void Area_cal() { }
     }
 
-    class Circle : area
+    class Circle : Area
     {
         public void Area_cal(double redius)
         {
@@ -40,7 +40,7 @@ namespace Polymorphism
         }
     }
 
-    class Squre : area
+    class Squre : Area
     {
         public void Area_cal(int side)
         {

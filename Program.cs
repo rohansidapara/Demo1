@@ -1,7 +1,9 @@
-﻿using DemoLoops;
+﻿using Assembly;
+using DemoLoops;
 using Encapsulation;
 using MyApplication;
 using Polymorphism;
+using Recursive_demo;
 using System;
 
 namespace Demo1
@@ -119,8 +121,8 @@ namespace Demo1
             Console.WriteLine();
 
             Cat1 Mycat = new Cat1();
-            Mycat.sleep();
-            Mycat.aniamlSound();
+            Mycat.Sleep();
+            Mycat.AniamlSound();
             Console.WriteLine();
 
             Console.WriteLine("-- Interface Demo --");
@@ -137,8 +139,20 @@ namespace Demo1
             loops.Loops2(1); // While loop
             loops.Loop1(1); // if else
             loops.Loop1(0); // if else
-            //loops.Loop2(2); // do while
+            loops.Loop2(2); // do while
 
+            Console.WriteLine();
+
+            // assembly
+
+            //Person person = new Person();
+            //person.Sayhello();
+
+            //recursion
+            Console.WriteLine("-- Recursive Demo --");
+            int n = 5;
+            Recursive recursive = new Recursive(); 
+            recursive.Print(n);
             Console.ReadLine();
         }
     }

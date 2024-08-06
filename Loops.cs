@@ -17,7 +17,7 @@ namespace DemoLoops
 
         public void Loop1(int i)
         {
-            if(i == 1)
+            if (i == 1)
             {
                 Console.WriteLine("True");
             }
@@ -29,7 +29,7 @@ namespace DemoLoops
 
         // while loops
 
-        public void Loops2(int i) 
+        public void Loops2(int i)
         {
             while (i < 5)
             {
@@ -40,13 +40,13 @@ namespace DemoLoops
 
         // do while 
 
-        //public void Loop2(int i)
-        //{
-        //    do
-        //    {
-        //        Console.WriteLine("Ture");
-        //        i++;
-        //    } while (i>5);
-        //}
+        public void Loop2(int i)
+        {
+            do
+            {
+                Console.WriteLine("Ture");
+                i++;
+            } while (i > 5);
+        }
     }
 }
