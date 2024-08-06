@@ -1,5 +1,4 @@
-﻿using Assembly;
-using DemoLoops;
+﻿using DemoLoops;
 using Encapsulation;
 using MyApplication;
 using Polymorphism;
@@ -8,7 +7,18 @@ using System;
 
 namespace Demo1
 {
-    internal class Program
+    // Static demo
+    static class Author
+    {
+        public static int Authorage = 32;
+        public static string Authorname = "rohan sidapara";
+        public static string Author_l = "c#";
+        public static void Show()
+        {
+            Console.WriteLine("this are the your deatiles: ");
+        }
+    }
+    public class Program
     {
         static public void Main()
         {
@@ -22,11 +32,9 @@ namespace Demo1
             Tom.Walk();
             Tom.Eat();
 
-
             Bird Peacock = new Bird();
             Peacock.Fly();
             Peacock.Walk();
-
 
             penguin Jerry = new penguin();
             Jerry.swimming();
@@ -46,10 +54,8 @@ namespace Demo1
             myAnimal1.Method1();
             myAnimal1.Method2();
 
-
             Console.WriteLine();
             Console.WriteLine();
-
 
             // Demo of the a Encapsulation
             Console.WriteLine("-- Encapsulation Demo --");
@@ -77,13 +83,11 @@ namespace Demo1
             Console.WriteLine("Now youe closing balance is : " + Rohan_account.Balance);
 
             Console.WriteLine();
-
             Console.WriteLine("-- polymorphism Demo --");
 
             Console.WriteLine();
             Console.WriteLine("demo 1");
             Console.WriteLine();
-
 
             Cars car1 = new Cars();
             car1.Carsound();
@@ -149,10 +153,33 @@ namespace Demo1
             //person.Sayhello();
 
             //recursion
+            //demo 1
             Console.WriteLine("-- Recursive Demo --");
             int n = 5;
-            Recursive recursive = new Recursive(); 
+            Recursive recursive = new Recursive();
             recursive.Print(n);
+            //demo 2 
+
+            //Console.WriteLine("Write maximum number: ");
+            //int n1 = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 1; i <= n1; i++)
+            //{
+            //    //check if current number is prime
+            //    if (recursive.Primenumber(n1))
+            //    {
+            //        Console.WriteLine(recursive.Primenumber(n1));
+            //    }
+            //}
+            Console.WriteLine();
+            // Static class and method demo
+            Console.WriteLine("-- static class demo -- ");
+            Console.WriteLine();
+            Author.Show();
+            Console.WriteLine("Authoe name is : " + Author.Authorname);
+            Console.WriteLine("Authoe age is : " + Author.Authorage);
+            Console.WriteLine("Authoe language is : " + Author.Author_l);
+
             Console.ReadLine();
         }
     }
