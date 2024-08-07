@@ -12,7 +12,17 @@ Revision :- OOPs concept
 
 Date: 05/08/2024
 
-completed :- Abstraction class with example, Interface with Example, if, if-else, while, for loop with example
+Completed :- Abstraction class with example, Interface with Example, if, if-else, while, for loop with example
 In progress :- other loops, Assembly
 Revision :- OOPs concept 
 Extra :- learn basic git command (clone , init, add, commit, pull, push)
+
+Date: 06/08/2024
+
+Completed :- Recursive call with demo, Static call with demo, Assembly theory
+In Progress :- assembly example, Singleton class
+
+Date: 07/08/2024
+
+Completed :- Assembly Example, sealed class with example, singleton class with example
+In progress :- Extention method
