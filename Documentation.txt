@@ -36,7 +36,9 @@ Polymorphism :- Ploymorphism allows us to perform a single action in different w
     method overloading.
  -> in overloading type of parameter or type of method must be diffirent to overload method.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-Virtual Class :- Vritual class defined by writing a keyword "virtual" in the derived classes, allowing only one copy of data to be copied to class b and class c.
+Virtual Class :- Vritual class defined by writing a keyword "virtual" in the derived classes, allowing only one copy of data to be copied to class b and
+ class c.
+--> Virtual base class help on preventing multiple "instances"(block multiple access point).
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Interface :- interface is a completely "abstract class" which can only contain abstract methods and properties( with empty bodies)
 --> interface method not contain anything in body. subclass use that method as per they uses.
@@ -63,3 +65,8 @@ Static class :- Static class contain static method and static variable
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Singlenton :- is most popular design pattens.
 --> in simple terms a class that allows only a single instance to itslef to be created and usually gives simple access to that instance.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Extention :-  the extension method concept allows you to add new methods in the existing class or in the structure without modifying the source code of the original 
+type and you do not require any kind of special permission from the original type and there is no need to re-compile the original type. It is introduced in C# 3.0
+--> Extention method always defined as a Static method.
+--> Use "this" keyword to bind classe.

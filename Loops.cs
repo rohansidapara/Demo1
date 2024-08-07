@@ -8,27 +8,19 @@ namespace DemoLoops
         public void Loops1(int value)
         {
             if (value < 3)
-            {
                 Console.WriteLine("this is demo of If loop.");
-            }
         }
-
         // if else 
-
         public void Loop1(int i)
         {
             if (i == 1)
-            {
                 Console.WriteLine("True");
-            }
             else
             {
                 Console.WriteLine("False");
             }
         }
-
         // while loops
-
         public void Loops2(int i)
         {
             while (i < 5)
@@ -37,9 +29,7 @@ namespace DemoLoops
                 i++;
             }
         }
-
         // do while 
-
         public void Loop2(int i)
         {
             do

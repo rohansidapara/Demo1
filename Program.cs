@@ -4,9 +4,35 @@ using MyApplication;
 using Polymorphism;
 using Recursive_demo;
 using System;
+using Sumdll; // version issue
 
 namespace Demo1
 {
+    // Singleton Class
+    public class Singleton
+    {
+        private static Singleton instance = null;
+        public String s;
+        private Singleton()
+        {
+            s = "Hello i am a string part of singleton class";
+        }
+        public static Singleton Singleton1() // for creating new instance for singleton
+        {
+            if (instance == null) // singel line body dont need body
+                instance = new Singleton();
+            return instance;
+        }
+    }
+    //Sealed class Demo
+    sealed class Demo_print
+    {
+        public void Show123(int a, int b)
+        {
+            Console.WriteLine("-- Sealed calss demo --");
+            Console.WriteLine(a + b);
+        }
+    }
     // Static demo
     static class Author
     {
@@ -60,6 +86,7 @@ namespace Demo1
             // Demo of the a Encapsulation
             Console.WriteLine("-- Encapsulation Demo --");
             Console.WriteLine();
+
             Console.WriteLine("demo 1");
             Console.WriteLine();
             Human rohan = new Human();
@@ -121,6 +148,7 @@ namespace Demo1
             //string username = Console.ReadLine();
 
             //Console.WriteLine("Your name is " + username);
+
             Console.WriteLine("-- Abstraction Demo --");
             Console.WriteLine();
 
@@ -137,6 +165,7 @@ namespace Demo1
             rohanin.Print2();
 
             Console.WriteLine();
+            Console.WriteLine("-- Loops --");
             // Demos of Loops
             Loops loops = new Loops();
             loops.Loops1(2); // If loop
@@ -180,6 +209,31 @@ namespace Demo1
             Console.WriteLine("Authoe age is : " + Author.Authorage);
             Console.WriteLine("Authoe language is : " + Author.Author_l);
 
+            Console.WriteLine();
+            Demo_print demo_Print = new Demo_print(); // sealed class
+            demo_Print.Show123(5, 6);
+
+            // singleton class
+            Console.WriteLine();
+            Console.WriteLine("-- Singleton class demo --");
+            Singleton X = Singleton.Singleton1(); // creat new instance
+            Singleton Y = Singleton.Singleton1(); // creat new instance
+            Singleton Z = Singleton.Singleton1(); // creat new instance
+            Console.WriteLine("Hashcode of x is " + X.GetHashCode()); // same hashode
+            Console.WriteLine("Hashcode of Y is " + Y.GetHashCode());
+            Console.WriteLine("Hashcode of Z is " + Z.GetHashCode());
+
+            //Class1 sumdll = new Class1();
+            //sumdll.Addition(5, 5); // dll
+            Console.WriteLine();
+            Console.WriteLine("-- Extention demo --");
+
+            ExntensionDemo E = new ExntensionDemo(); 
+            E.M1();
+            E.M2();
+            E.M3();
+            E.M4();
+            E.M5("method 5");
             Console.ReadLine();
         }
     }

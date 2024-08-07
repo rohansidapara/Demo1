@@ -4,8 +4,8 @@ using System;
 using System.Security.Policy;
 
 abstract class Animal_Wild {
-    public abstract void AniamlSound();
-    public void Sleep()
+    public abstract void AniamlSound(); // absract method
+    public void Sleep() // normal method
     {
         Console.WriteLine("Zzz...");
     }

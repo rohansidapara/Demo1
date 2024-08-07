@@ -11,14 +11,14 @@ namespace Polymorphism
     }
     class BMW : Cars
     {
-        public void Carsound()
+        public new void Carsound() // use a new keyword to indicate intentional main method hiding 
         {
             Console.WriteLine("The Bmw sound likes : vroom vroom");
         }
     }
     class Supra : Cars
     {
-        public void Carsound()
+        public new void Carsound()
         {
             Console.WriteLine("The Supra sound like : ratttta ratttttaa..");
         }

@@ -2,7 +2,7 @@
 
 namespace MyApplication
 {
-    public interface IABC {
+    public interface IABC { // interface contian empty methods
         void Print();
     }
     public interface IDEF
@@ -14,9 +14,8 @@ namespace MyApplication
     {
         public void Print()
         {
-            Console.WriteLine("Interface 1 called");
+            Console.WriteLine("Interface 1 called"); //override
         }
-        
         public void Print2()
         {
             Console.WriteLine("Interface 2 called");

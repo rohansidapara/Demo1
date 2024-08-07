@@ -40,9 +40,7 @@ namespace Demo1
             Console.WriteLine("Eagle is hunting");
         }
     }
-
     // multi-level Inheritance
-
     class snake : Animal
     {
         public void Hear()
