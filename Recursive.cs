@@ -12,20 +12,5 @@ namespace Recursive_demo
                 Print(n - 1);
             }
         }
-
-        // demo 2 incomplete
-        // prime number
-
-        //public bool Primenumber(int n1)
-        //{
-        //    if (n1 == 1 || n1 == 0)  return false;
-
-        //    for (int i = 2; i < n1; i++)
-        //    {
-        //        if (n1 % i == 0) ;
-        //        return false;
-        //    }
-        //    return true;
-        //}
     }
 }

@@ -4,10 +4,23 @@ using MyApplication;
 using Polymorphism;
 using Recursive_demo;
 using System;
-using Sumdll; // version issue
+using Sumdll;// version issue
+using System.Security.Cryptography.X509Certificates;
+using System.Runtime.CompilerServices;
+using System.ComponentModel;
 
 namespace Demo1
 {
+    // partial class
+    public partial class PartialDemo
+    {
+        public void Display()
+        {
+            Console.WriteLine("company name : " + item);
+            Console.WriteLine("company id : " + companyid);
+        }
+    }
+
     // Singleton Class
     public class Singleton
     {
@@ -19,7 +32,7 @@ namespace Demo1
         }
         public static Singleton Singleton1() // for creating new instance for singleton
         {
-            if (instance == null) // singel line body dont need body
+            if (instance == null) // singel line body dont need {}
                 instance = new Singleton();
             return instance;
         }
@@ -94,7 +107,7 @@ namespace Demo1
             rohan.age = 22;
 
             Console.WriteLine("name : " + rohan.name);
-            Console.WriteLine("name : " + rohan.age);
+            Console.WriteLine("age : " + rohan.age);
 
             Console.WriteLine();
             Console.WriteLine("demo 2");
@@ -141,7 +154,7 @@ namespace Demo1
             Console.WriteLine();
 
             Console.WriteLine(Sum.Add(2, 3));
-            Console.WriteLine(Sum.Add(4.0, 5.0));
+            Console.WriteLine(Sum.Add(5.0, 4.0));
             Console.WriteLine();
 
             //Console.WriteLine("write your name here : ");
@@ -187,27 +200,15 @@ namespace Demo1
             int n = 5;
             Recursive recursive = new Recursive();
             recursive.Print(n);
-            //demo 2 
-
-            //Console.WriteLine("Write maximum number: ");
-            //int n1 = Convert.ToInt32(Console.ReadLine());
-
-            //for (int i = 1; i <= n1; i++)
-            //{
-            //    //check if current number is prime
-            //    if (recursive.Primenumber(n1))
-            //    {
-            //        Console.WriteLine(recursive.Primenumber(n1));
-            //    }
-            //}
+   
             Console.WriteLine();
             // Static class and method demo
             Console.WriteLine("-- static class demo -- ");
             Console.WriteLine();
             Author.Show();
-            Console.WriteLine("Authoe name is : " + Author.Authorname);
-            Console.WriteLine("Authoe age is : " + Author.Authorage);
-            Console.WriteLine("Authoe language is : " + Author.Author_l);
+            Console.WriteLine("Author name is : " + Author.Authorname);
+            Console.WriteLine("Author age is : " + Author.Authorage);
+            Console.WriteLine("Author language is : " + Author.Author_l);
 
             Console.WriteLine();
             Demo_print demo_Print = new Demo_print(); // sealed class
@@ -234,6 +235,11 @@ namespace Demo1
             E.M3();
             E.M4();
             E.M5("method 5");
+            Console.WriteLine();
+            // excution of paetial class
+            PartialDemo partialDemo = new PartialDemo("itech" , 123456);
+            partialDemo.Display();
+
             Console.ReadLine();
         }
     }

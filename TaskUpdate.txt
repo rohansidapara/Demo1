@@ -26,3 +26,8 @@ Date: 07/08/2024
 
 Completed :- Assembly Example dll file, sealed class with example, singleton class with example, Extention method Theroy
 In progress :- Extention method example
+
+Date: 08/08/2024
+
+Completed :- Extention method example, Partial class 
+In progress :- SQL

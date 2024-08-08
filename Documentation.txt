@@ -58,9 +58,10 @@ Recursion :- is a function that calls itself. Recursion is a process where a fun
 Sealed class :- Selaed classes are used to restrict the users form inheriting the class
 --> Sealed class is used to stop a class to be inherited 
 --> we can sealed class by use "Sealed" keyword.
+--> No class can be derived from a sealed class.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Static class :- Static class contain static method and static variable
---> Staric class can not be called by object
+--> Static class can not be called by object
 --> we can don't create object of static class 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Singlenton :- is most popular design pattens.

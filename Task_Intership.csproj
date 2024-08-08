@@ -50,6 +50,7 @@
     <Compile Include="Encapsulation.cs" />
     <Compile Include="ExntensionDemo.cs" />
     <Compile Include="Interface.cs" />
+    <Compile Include="Partial.cs" />
     <Compile Include="Polymorphism.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
