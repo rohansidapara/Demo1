@@ -141,7 +141,7 @@ namespace Demo1
             Console.WriteLine();
             Console.WriteLine("demo 2");
             Console.WriteLine();
-
+            // overriding example
             Circle circle = new Circle();
             circle.Area_cal(4);
 
@@ -154,13 +154,8 @@ namespace Demo1
             Console.WriteLine();
 
             Console.WriteLine(Sum.Add(2, 3));
-            Console.WriteLine(Sum.Add(5.0, 4.0));
+            Console.WriteLine(Sum.Add(5.0, 4.0)); // SUB OPREATION
             Console.WriteLine();
-
-            //Console.WriteLine("write your name here : ");
-            //string username = Console.ReadLine();
-
-            //Console.WriteLine("Your name is " + username);
 
             Console.WriteLine("-- Abstraction Demo --");
             Console.WriteLine();
@@ -227,6 +222,14 @@ namespace Demo1
             //Class1 sumdll = new Class1();
             //sumdll.Addition(5, 5); // dll
             Console.WriteLine();
+            Console.WriteLine("-- virtual class --");
+            Class1 class1 = new Class1();
+            class1.Class12();
+            Class2 class2 = new Class2();
+            class2.Class12();
+            Class1 class3 = new Class2();
+            class3.Class12();
+
             Console.WriteLine("-- Extention demo --");
 
             ExntensionDemo E = new ExntensionDemo(); 
@@ -237,6 +240,8 @@ namespace Demo1
             E.M5("method 5");
             Console.WriteLine();
             // excution of paetial class
+            
+            Console.WriteLine("-- Partial Demo --");
             PartialDemo partialDemo = new PartialDemo("itech" , 123456);
             partialDemo.Display();
 

@@ -1,17 +1,20 @@
-﻿//using System.Security.Cryptography.X509Certificates;
-//using System.Security.Policy;
+﻿using System;
+using System.Security.Cryptography.X509Certificates;
+using System.Runtime.CompilerServices;
+using System.ComponentModel;
 
-//namespace Demo1
-//{
-//    //public class A12
-//    //{
-//    //    public virtual void A()
-//    //    {
-//    //        int number = 1234578910;
-//    //    }
-//    //}   
-//    //public class A23 :  A12
-//    //{
+public class Class1
+{
+	public virtual void Class12()
+	{
+        Console.WriteLine("BJP");
+	}
+}
 
-//    //}
-//}
+class Class2 : Class1
+{
+    public override void Class12()
+    {
+        Console.WriteLine("congress");
+    }
+}
