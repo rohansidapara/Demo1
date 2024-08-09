@@ -9,7 +9,6 @@ namespace MyApplication
     {    
         void Print2();
     }
-
     class RohanIN : IABC, IDEF
     {
         public void Print()

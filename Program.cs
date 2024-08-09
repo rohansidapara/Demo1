@@ -4,7 +4,6 @@ using MyApplication;
 using Polymorphism;
 using Recursive_demo;
 using System;
-using Sumdll;// version issue
 using System.Security.Cryptography.X509Certificates;
 using System.Runtime.CompilerServices;
 using System.ComponentModel;
@@ -20,7 +19,6 @@ namespace Demo1
             Console.WriteLine("company id : " + companyid);
         }
     }
-
     // Singleton Class
     public class Singleton
     {
@@ -54,7 +52,7 @@ namespace Demo1
         public static string Author_l = "c#";
         public static void Show()
         {
-            Console.WriteLine("this are the your deatiles: ");
+            Console.WriteLine("this are the Author deatiles: ");
         }
     }
     public class Program
@@ -89,13 +87,10 @@ namespace Demo1
             kingcobra.Atteck();
             kingcobra.Hear();
 
-            MyAnimal myAnimal1 = new MyAnimal();
+            MyAnimal myAnimal1 = new MyAnimal(); // interface
             myAnimal1.Method1();
             myAnimal1.Method2();
-
             Console.WriteLine();
-            Console.WriteLine();
-
             // Demo of the a Encapsulation
             Console.WriteLine("-- Encapsulation Demo --");
             Console.WriteLine();
@@ -176,14 +171,14 @@ namespace Demo1
             Console.WriteLine("-- Loops --");
             // Demos of Loops
             Loops loops = new Loops();
-            loops.Loops1(2); // If loop
-            loops.Loops2(1); // While loop
-            loops.Loop1(1); // if else
-            loops.Loop1(0); // if else
-            loops.Loop2(2); // do while
+            loops.If(2); // If loop
+            loops.While(1); // While loop
+            loops.Ifelse(1); // if else
+            loops.Ifelse(0); // if else
+            loops.Dowhile(1); // do while
+            loops.For();
 
             Console.WriteLine();
-
             // assembly
 
             //Person person = new Person();
@@ -222,16 +217,17 @@ namespace Demo1
             //Class1 sumdll = new Class1();
             //sumdll.Addition(5, 5); // dll
             Console.WriteLine();
+            // virtual class
             Console.WriteLine("-- virtual class --");
-            Class1 class1 = new Class1();
+            Class1a class1 = new Class1a();
             class1.Class12();
             Class2 class2 = new Class2();
             class2.Class12();
-            Class1 class3 = new Class2();
+            Class2 class3 = new Class2();
             class3.Class12();
+            Console.WriteLine();
 
             Console.WriteLine("-- Extention demo --");
-
             ExntensionDemo E = new ExntensionDemo(); 
             E.M1();
             E.M2();
@@ -239,8 +235,8 @@ namespace Demo1
             E.M4();
             E.M5("method 5");
             Console.WriteLine();
-            // excution of paetial class
-            
+
+            // demo of partial class
             Console.WriteLine("-- Partial Demo --");
             PartialDemo partialDemo = new PartialDemo("itech" , 123456);
             partialDemo.Display();

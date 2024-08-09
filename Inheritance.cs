@@ -10,7 +10,6 @@ namespace Demo1
             Console.WriteLine("Animal is walking");
         }
     }
-
     class Cat : Animal
     {
         public void Eat()
@@ -55,6 +54,8 @@ namespace Demo1
             Console.WriteLine("anaconda is wildest attecker.");
         }
     }
+
+    // interface
     interface I1
     {
         void Method1();

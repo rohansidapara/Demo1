@@ -10,7 +10,7 @@ namespace Encapsulation
         private int HumanAge;
         public string name
         {
-            get { return HumanName; }
+            get { return HumanName; } 
             set { HumanName = value; }
         }
         public int age
@@ -31,7 +31,7 @@ namespace Encapsulation
         public decimal Deposit
         {
             get { return balance; }
-            set { balance += value; }
+            set { balance += value; } // balance = balance + value
 
         }
         public decimal Withdraw
@@ -41,7 +41,7 @@ namespace Encapsulation
             {
                 if (balance >= value)
                 {
-                    balance -= value;
+                    balance -= value; // balance = balance - value
                 }
                 else
                 {

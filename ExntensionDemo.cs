@@ -18,7 +18,6 @@ namespace Demo1
             Console.WriteLine("method 3");
         }
     }
-
     static class ExtreMethod 
     {
         public static void M4(this ExntensionDemo E) // this keyword for binlding classes
